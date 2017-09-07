@@ -2,7 +2,6 @@ package com.example.administrator.testkotlin.presenter
 
 import android.os.Handler
 import android.util.Log
-import com.example.administrator.testkotlin.bean.Data
 import com.example.administrator.testkotlin.bean.ExpressInfo
 import com.example.administrator.testkotlin.contract.ExpressContract
 import com.example.administrator.testkotlin.network.HttpRequests
@@ -29,7 +28,7 @@ class ExpressPresenter(val expressView: ExpressContract.View) : ExpressContract.
                     if (t?.message?.equals("快递公司参数异常：单号不存在或者已经过期")!! || t?.message?.equals("参数错误")!!) {
                         expressView.setExpressContentStatus(t?.message)
                     } else {
-                        expressView.showExpress(t?.data?.toList() as MutableList<Data>)
+                        expressView.showExpress(t?.data?.toList() as MutableList<ExpressInfo.Data>)
                     }
                 }, time)
             }

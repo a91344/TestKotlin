@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.example.administrator.testkotlin.R
-import com.example.administrator.testkotlin.bean.Data
+import com.example.administrator.testkotlin.bean.ExpressInfo
 import com.example.administrator.testkotlin.constants.Constants
 import com.example.administrator.testkotlin.contract.ExpressContract
 import com.example.administrator.testkotlin.presenter.ExpressPresenter
@@ -21,7 +21,7 @@ import java.util.*
  */
 class ExpressActivity : AppCompatActivity(), ExpressContract.View {
     var pre: ExpressContract.Presenter? = null
-    var datas: ArrayList<Data> = ArrayList()
+    var datas: ArrayList<ExpressInfo.Data> = ArrayList()
     var expressAdapter: ExpressAdapter? = null
     var loadingDialog: QMUITipDialog? = null
     var type: String = ""
@@ -59,7 +59,7 @@ class ExpressActivity : AppCompatActivity(), ExpressContract.View {
         pre = presenter
     }
 
-    override fun showExpress(datas: MutableList<Data>) {
+    override fun showExpress(datas: MutableList<ExpressInfo.Data>) {
         this.datas.addAll(datas)
         Collections.reverse(this.datas)
         expressAdapter?.notifyDataSetChanged()

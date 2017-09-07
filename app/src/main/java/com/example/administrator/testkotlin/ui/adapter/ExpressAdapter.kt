@@ -8,12 +8,12 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.administrator.testkotlin.R
-import com.example.administrator.testkotlin.bean.Data
+import com.example.administrator.testkotlin.bean.ExpressInfo
 
 /**
  * Created by Administrator on 2017/9/6.
  */
-class ExpressAdapter(val mContext: Context, var datas: MutableList<Data>) : BaseAdapter() {
+class ExpressAdapter(val mContext: Context, var datas: MutableList<ExpressInfo.Data>) : BaseAdapter() {
     private val inflater: LayoutInflater = LayoutInflater.from(mContext)
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
         var v: View? = convertView

@@ -13,11 +13,12 @@ data class ExpressInfo(
         var status: String, // 200
         var state: String, // 0
         var data: List<Data>
-)
+) {
+    data class Data(
+            var time: String, // 2017-09-01 20:12:51
+            var ftime: String, // 2017-09-01 20:12:51
+            var context: String, // 快件已到达环东广场圆通快递云兰租车部妈妈驿站,如有疑问请联系18552351543
+            var location: String
+    )
+}
 
-data class Data(
-        var time: String, // 2017-09-01 20:12:51
-        var ftime: String, // 2017-09-01 20:12:51
-        var context: String, // 快件已到达环东广场圆通快递云兰租车部妈妈驿站,如有疑问请联系18552351543
-        var location: String
-)
