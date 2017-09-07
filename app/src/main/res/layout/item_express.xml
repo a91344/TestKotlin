@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_exp_tv_top"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="#6000" />
+
+            <TextView
+                android:id="@+id/item_exp_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="XX:XX"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/item_exp_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXXXXX" />
+
+            <TextView
+                android:id="@+id/item_exp_tv_bottom"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#6000" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/item_exp_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="XXX"
+            android:textColor="#444" />
+    </LinearLayout>
+
+</LinearLayout>
