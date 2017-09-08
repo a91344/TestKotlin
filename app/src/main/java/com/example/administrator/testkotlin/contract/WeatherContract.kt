@@ -9,7 +9,8 @@ import com.example.administrator.testkotlin.bean.WeatherInfo
  */
 interface WeatherContract {
     interface View : BaseView<Presenter> {
-        abstract fun showWeather(datas: MutableList<WeatherInfo.Forecast>)
+        abstract fun showWeather(datas: MutableList<WeatherInfo.Data.Forecast>)
+        abstract fun showCurrentWeather(data: WeatherInfo.Data)
         abstract fun showDialog()
         abstract fun hideDialog()
     }

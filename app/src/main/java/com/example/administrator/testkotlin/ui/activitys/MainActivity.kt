@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initEvent() {
         main_iv_exp.setOnClickListener({ startActivity(Intent(this@MainActivity, ExpressActivity::class.java)) })
+        main_iv_wea.setOnClickListener { startActivity(Intent(this@MainActivity, WeatherActivity::class.java)) }
     }
 
 }

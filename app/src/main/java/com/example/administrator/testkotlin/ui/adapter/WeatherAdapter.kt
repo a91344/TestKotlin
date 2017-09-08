@@ -13,7 +13,7 @@ import com.example.administrator.testkotlin.bean.WeatherInfo
 /**
  * Created by Administrator on 2017/9/7.
  */
-class WeatherAdapter(val mContext: Context, val datas: MutableList<WeatherInfo.Forecast>) : BaseAdapter() {
+class WeatherAdapter(val mContext: Context, val datas: MutableList<WeatherInfo.Data.Forecast>) : BaseAdapter() {
     val inflater: LayoutInflater = LayoutInflater.from(mContext)
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
         var v: View? = convertView
